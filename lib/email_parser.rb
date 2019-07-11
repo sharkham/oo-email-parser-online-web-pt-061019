@@ -12,6 +12,7 @@ class EmailParser
   def parse
     parsed_emails = @emails.split(/[,\s]/)
     parsed_emails.delete("")
-    parsed_emails 
+    unique_emails = parsed_emails.uniq
+    unique_emails 
   end
 end
